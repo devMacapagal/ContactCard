@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Card - Earl Macapagal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #050608;
+      color: #f9fafb;
+    }
+
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      background-image: linear-gradient(
+          rgba(31, 41, 55, 0.18) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(31, 41, 55, 0.18) 1px,
+          transparent 1px
+        );
+      background-size: 40px 40px;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .card {
+      position: relative;
+      width: 340px;
+      background: #111827;
+      border-radius: 16px;
+      padding: 32px 26px 24px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(55, 65, 81, 0.7);
+      text-align: center;
+      z-index: 1;
+    }
+
+    .avatar-wrap {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 20px;
+      border-radius: 16px;
+      border: 2px solid #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #050608;
+    }
+
+    .avatar-inner {
+      width: 60px;
+      height: 60px;
+      border-radius: 999px;
+      border: 2px solid rgba(249, 250, 251, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f9fafb;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .title {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #e5e7eb;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 0.78rem;
+      color: #9ca3af;
+      margin-bottom: 20px;
+    }
+
+    .info-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      background: #030712;
+      border-radius: 8px;
+      border: 1px solid #1f2937;
+      font-size: 0.85rem;
+      color: #d1d5db;
+    }
+
+    .info-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #111827;
+      color: #e5e7eb;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .info-text a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .info-text a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #374151;
+      font-size: 0.9rem;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .btn-primary {
+      background: #f9fafb;
+      color: #111827;
+      border-color: #f9fafb;
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      background: #e5e7eb;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: #f9fafb;
+    }
+
+    .btn-ghost:hover {
+      background: #030712;
+      border-color: #4b5563;
+    }
+
+    .social-row {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .social-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      border: 1px solid #374151;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e5e7eb;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .social-btn:hover {
+      background: #030712;
+      border-color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <div class="card">
+    <div class="avatar-wrap">
+      <div class="avatar-inner">E</div>
+    </div>
+
+    <h1 class="name">Earl Macapagal</h1>
+    <p class="title">IT Professional | Generalist Specialist</p>
+    <p class="subtitle">Bridging People with Technology and Innovation</p>
+
+    <div class="info-stack">
+      <div class="info-row">
+        <div class="info-icon">✉</div>
+        <div class="info-text">
+          <a href="mailto:earlpatrickmacapagal@gmail.com">
+            earlpatrickmacapagal@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon">📞</div>
+        <div class="info-text">
+          <a href="tel:+639396206515">
+            +63 939 620 6515
+          </a>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon">📍</div>
+        <div class="info-text">
+          Pampanga, PH
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary">
+      Send Message
+    </button>
+    <button class="btn btn-ghost">
+      Save Contact
+    </button>
+
+    <div class="social-row">
+      <a class="social-btn" href="#" aria-label="LinkedIn">in</a>
+      <a class="social-btn" href="#" aria-label="Twitter">🐦</a>
+      <a class="social-btn" href="#" aria-label="Website">🌐</a>
+    </div>
+  </div>
+</body>
+</html>
